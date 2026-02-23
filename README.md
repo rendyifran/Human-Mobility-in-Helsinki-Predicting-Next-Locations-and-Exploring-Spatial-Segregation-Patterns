@@ -3,7 +3,6 @@
 
 <p align="center">
   <img src="images/Model_Results.jpg" width="30%" />
-  <img src="images/Exploratory_Data_Analysis.png" width="30%" />
   <img src="images/Modified_Schelling_Simulation.jpg" width="30%" />
 </p>
 
