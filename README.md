@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 This project investigates whether socio-spatial segregation improves next-location prediction in large-scale human mobility data.
 
@@ -25,7 +25,7 @@ The central question:
 
 ---
 
-## 🎯 Key Contributions
+## Key Contributions
 
 1. **Schelling-Inspired Simulation on Real Road Networks**  
    Instead of a traditional grid, segregation behaviour is simulated over Helsinki’s real urban road network.
@@ -43,7 +43,7 @@ The central question:
 
 ---
 
-## 🧠 Methodology
+## Methodology
 
 ### Data
 - Large-scale GPS mobility dataset (Helsinki)
@@ -70,7 +70,7 @@ The central question:
 
 ---
 
-## 📊 Results Summary
+## Results Summary
 
 While segregation-aware features provide consistent improvements across some metrics, performance gains remain modest.
 
@@ -85,7 +85,7 @@ The findings suggest:
 
 ---
 
-## 🏙 Why This Matters
+## Why This Matters
 
 Human mobility modelling has applications in:
 
@@ -102,7 +102,7 @@ This research explores the intersection of:
 
 ---
 
-## 🛠 Repository Structure
+## Repository Structure
 - images/ # Visualisations and result figures
 - Main_code_Helsinki.ipynb # Core modelling and evaluation pipeline
 - Analysis_doc_schelling.pdf # Full thesis document
@@ -110,7 +110,7 @@ This research explores the intersection of:
 
 ---
 
-## 📄 Full Thesis
+## Full Thesis
 
 The full MSc thesis is available here:
 
@@ -118,7 +118,6 @@ The full MSc thesis is available here:
 
 ---
 
-## 👤 Author
-
-MSc Social & Geographic Data Science  
-University College London
+## Author & Supervisor
+- Author: Mohamad Rendy Irawan Ifran (Department of Geography, University College London)
+- Supervisor: Dr. Stephen Law (Department of Geography, University College London)
