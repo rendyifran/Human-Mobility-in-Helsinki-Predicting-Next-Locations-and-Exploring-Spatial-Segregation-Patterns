@@ -1,8 +1,124 @@
-# Human Mobility in Helsinki: Predicting Next Locations and Exploring Spatial Segregation Patterns
+# Human Mobility in Helsinki  
+## Predicting Next Locations and Exploring Spatial Segregation Patterns
+
 <p align="center">
   <img src="images/Model_Results.jpg" width="30%" />
   <img src="images/Exploratory_Data_Analysis.png" width="30%" />
   <img src="images/Modified_Schelling_Simulation.jpg" width="30%" />
 </p>
 
-The prevalent use of smartphones and location-based services has led to the creation of large-scale mobility datasets. Predicting human mobility has become increasingly important for applications such as urban planning, traffic optimisation, and public health monitoring. While many models focus on spatiotemporal patterns, this study highlights the value of incorporating social context, particularly the concept of experienced segregation, into next-location prediction. Utilizing a novel dataset from Locomizer, this thesis makes two main contributions. First, it introduces a novel adaptation of the Schelling model to simulate avoidance behaviour using a real urban road network in Helsinki, rather than a traditional grid format. Second, it evaluates the effect of segregation-related features on the performance of three recurrent neural network (RNN) models: GRU4Rec, ST-RNN, and DeepMove. The results show that while there are improvements associated with the segregation features, these gains are relatively small, ranging from 0.01 to 0.08 percentage points in Acc@1. This suggests that although the inclusion of socio-spatial context is conceptually valuable, more substantial performance improvements may require further hyperparameter tuning or the adoption of alternative advanced architectures. In conclusion, this research offers a new perspective on the integration of social behaviour and mobility prediction. It provides a methodological foundation for incorporating segregation-aware features into machine learning models and demonstrates the potential relevance of these features for understanding mobility patterns.
+---
+
+## 📌 Overview
+
+This project investigates whether socio-spatial segregation improves next-location prediction in large-scale human mobility data.
+
+Using a real-world GPS dataset from Helsinki (Locomizer), the study integrates:
+
+- Sequential deep learning models (GRU4Rec, ST-RNN, DeepMove)
+- Segregation-aware behavioural features
+- A Schelling-inspired route adaptation simulation on real road networks
+
+The central question:
+
+> Does incorporating experienced segregation meaningfully improve mobility prediction performance?
+
+---
+
+## 🎯 Key Contributions
+
+1. **Schelling-Inspired Simulation on Real Road Networks**  
+   Instead of a traditional grid, segregation behaviour is simulated over Helsinki’s real urban road network.
+
+2. **Segregation-Aware Feature Engineering**  
+   Social exposure metrics (co-presence, economic interaction, affinity-based contact) are integrated into RNN-based models.
+
+3. **Comparative Evaluation of Sequential Models**
+   - GRU4Rec  
+   - ST-RNN  
+   - DeepMove (Attention-based long-term user modelling)
+
+4. **Inductive Time-Based Evaluation Setup**  
+   Models are evaluated under a time-based inductive split to test generalisation.
+
+---
+
+## 🧠 Methodology
+
+### Data
+- Large-scale GPS mobility dataset (Helsinki)
+- POI-mapped trajectories
+- Economic category inference at user level
+
+### Models
+- GRU4Rec
+- ST-RNN
+- DeepMove (Attn. Avg. Long User)
+
+### Evaluation Metrics
+- Acc@1
+- Acc@5
+- Acc@10
+- MRR
+- nDCG@10
+
+### Simulation
+- Threshold-based route avoidance
+- Dominance classification of road segments
+- Mixed-edge detection
+- Behavioural rerouting under exposure constraints
+
+---
+
+## 📊 Results Summary
+
+While segregation-aware features provide consistent improvements across some metrics, performance gains remain modest.
+
+Relative differences (Acc@1):
+- +0.06% improvement with segregation features
+
+The findings suggest:
+
+- Socio-spatial context is conceptually relevant  
+- Performance improvements are incremental  
+- Larger gains may require architectural innovations rather than feature augmentation alone  
+
+---
+
+## 🏙 Why This Matters
+
+Human mobility modelling has applications in:
+
+- Urban planning
+- Transport optimisation
+- Public health modelling
+- Smart city systems
+
+This research explores the intersection of:
+
+- Social segregation dynamics  
+- Sequential deep learning  
+- Spatial behavioural modelling  
+
+---
+
+## 🛠 Repository Structure
+- images/ # Visualisations and result figures
+- Main_code_Helsinki.ipynb # Core modelling and evaluation pipeline
+- Analysis_doc_schelling.pdf # Full thesis document
+- README.md
+
+---
+
+## 📄 Full Thesis
+
+The full MSc thesis is available here:
+
+[Download PDF](Analysis_doc_schelling.pdf)
+
+---
+
+## 👤 Author
+
+MSc Social & Geographic Data Science  
+University College London
